@@ -1,5 +1,7 @@
 // pages/index.js
 import Head from 'next/head';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -9,10 +11,10 @@ export default function Home() {
         <title>XR School - Stay Tuned</title>
         <meta name="description" content="Stay tuned for more updates from XR School" />
       </Head>
-      
+
       {/* Company Name */}
       <header className={styles.header}>
-        <h1>My Company Name</h1>
+        <h1>XR School</h1>
       </header>
 
       {/* Stay Tuned Message */}
@@ -22,10 +24,17 @@ export default function Home() {
 
       {/* Contact Information */}
       <footer className={styles.footer}>
-        <h3>Contact Information</h3>
-        <p>Email: contact@mycompanyname.io</p>
-        <p>Phone: +1-234-567-8901</p>
-        <p>Address: 123, My Company St, City, Country</p>
+        <h3>Connect With Us</h3>
+
+        {/* Social Media Links */}
+        <div className={styles.socialMedia}>
+          <a href="https://www.linkedin.com/company/xr-school-io" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
+          </a>
+          <a href="https://www.instagram.com/xrschool.io?igsh=MTl6ZGo1YWR5Z2dmMw==" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className={styles.icon} />
+          </a>
+        </div>
       </footer>
     </div>
   );

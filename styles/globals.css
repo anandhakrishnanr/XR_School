@@ -1,0 +1,14 @@
+/* styles/globals.css */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #ecf0f1;
+    --accent-color: #02080c98;
+    --text-color: #34495e;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Update to use Roboto font */
+    background: linear-gradient(135deg, var(--primary-color) 30%, var(--secondary-color) 100%);
+    color: var(--text-color);
+}
